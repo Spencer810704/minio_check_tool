@@ -35,14 +35,14 @@ pip install -r requirements.txt
 
 ```
 cat << EOF > .env
-# Proxy 地址
+# Proxy 地址 (如果沒有要使用Proxy則將此配置像刪除)
 PROXY_ADDRESS="http://10.15.12.202:8888/"
 
 # Minio 帳號&密碼
 ACCESS_KEY="change to your username"
 SECRET_KEY="change to your password"
 
-# Minio 主機、Port、Scheme
+# 目標 Minio 主機、Port、協定(http or https)
 MINIO_HOST="minio.pf.stg"
 MINIO_PORT="9000"
 MINIO_SCHEME="http"
